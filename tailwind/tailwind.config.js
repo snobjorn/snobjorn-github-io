@@ -1,12 +1,14 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: ["./public/*.{html,js}"],
+  content: ["../*.{html,js}"],
   theme: {
     colors: {
       hoved: "#033860",
       middels: "#087ca7",
+      black: colors.black,
       gray: colors.gray,
+      white: colors.white,
       slate: colors.slate,
       current: "currentColor",
     },

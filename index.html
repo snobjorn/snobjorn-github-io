@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="alternate" href="https://www.snobjorn.no/" hreflang="no">
-	  <link rel="alternate" href="https://www.snobjorn.no/" hreflang="x-default">
+    <link rel="alternate" href="https://www.snobjorn.no/" hreflang="no" />
+    <link
+      rel="alternate"
+      href="https://www.snobjorn.no/"
+      hreflang="x-default"
+    />
 
     <title>Asbjørn Ness Web</title>
     <link rel="stylesheet" href="tailwind.css" />
@@ -15,21 +19,23 @@
       <div
         class="container flex flex-wrap items-center justify-between mx-auto"
       >
-        <a href="/" class="flex items-center">
+        <a
+          href="/"
+          class="flex items-center text-gray-900 no-underline hover:text-middels"
+        >
           <img
             src="./img/logo.svg"
             class="h-10 mr-3 sm:h-12"
             alt="Asbjørn Ness Logo"
           />
-          <span
-            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          <span class="self-center text-xl font-semibold whitespace-nowrap"
             >Asbjørn Ness Web</span
           >
         </a>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -40,7 +46,11 @@
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-hidden="false"
+            aria-labelledby="navbar-icon-menu"
           >
+            <title id="navbar-icon-menu">Meny</title>
             <path
               fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -50,12 +60,12 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
           >
             <li>
               <a
                 href="/"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                class="block py-2 pl-3 pr-4 text-white no-underline rounded hover:text-white bg-hoved hover:bg-middels md:hover:bg-transparent md:bg-transparent md:text-gray-900 md:hover:text-middels md:p-0"
                 aria-current="page"
                 >Hjem</a
               >
@@ -63,7 +73,7 @@
             <li>
               <a
                 href="https://blogg.snobjorn.no/"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pl-3 pr-4 no-underline rounded text-hoved hover:bg-middels hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-middels md:p-0"
                 >Blogg</a
               >
             </li>
@@ -74,117 +84,40 @@
 
     <!-- Steps -->
     <section>
-      <h1
-            class="mt-16 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-          >
-            Superkjapp nettsidebestilling
-          </h1>
+      <h1>Superkjapp nettsidebestilling</h1>
       <ul
         class="flex-wrap items-center justify-center gap-8 px-4 text-center sm:flex md:px-0"
       >
-        <li
-          class="w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 dark:bg-gray-800"
-        >
+        <li class="steps-item">
           <div class="flex-shrink-0">
-            <div
-              class="flex items-center justify-center w-12 h-12 px-3 mx-auto text-white rounded-full bg-hoved"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="192"
-                height="192"
-                fill="#FFFFFF"
-                viewBox="0 0 256 256"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <polyline
-                  points="84 64 132 32 132 224"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="16"
-                ></polyline>
-              </svg>
-            </div>
+            <div class="steps-number">1</div>
           </div>
-          <h3
-            class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl dark:text-white"
-          >
-            <a href="#bli-kontaktet">Fyll ut skjema</a>
+          <h3 class="steps-title">
+            <a href="#bli-kontaktet" class="default-link">Fyll ut skjema</a>
           </h3>
-          <p class="py-4 text-gray-500 text-md dark:text-gray-300">
-            Fyll ut navn og e-postadresse og få tilsendt en e-post med noen spørsmål.
+          <p class="steps-text">
+            Fyll ut navn og e-postadresse og få tilsendt en e-post med noen
+            spørsmål.
           </p>
         </li>
-        <li
-          class="w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 dark:bg-gray-800"
-        >
+        <li class="steps-item sm:mt-16 md:mt-20 lg:mt-24">
           <div class="flex-shrink-0">
-            <div
-              class="flex items-center justify-center w-12 h-12 px-3 mx-auto text-white rounded-full bg-hoved"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="192"
-                height="192"
-                fill="#FFFFFF"
-                viewBox="0 0 256 256"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <path
-                  d="M83.8,61.3A48,48,0,0,1,176,80a47.4,47.4,0,0,1-8.2,26.8h0L80,224h96"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="16"
-                ></path>
-              </svg>
-            </div>
+            <div class="steps-number">2</div>
           </div>
-          <h3
-            class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl dark:text-white"
-          >
-            Svar på noen spørmål
-          </h3>
-          <p class="py-4 text-gray-500 text-md dark:text-gray-300">
-            Svar på fem spørsmål om nettsiden du vil bestille. Og om hvem som skal ha den.
+          <h3 class="steps-title">Svar på noen spørmål</h3>
+          <p class="steps-text">
+            Svar på fem spørsmål om nettsiden du vil bestille. Og om hvem som
+            skal ha den.
           </p>
         </li>
-        <li
-          class="w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 dark:bg-gray-800"
-        >
+        <li class="steps-item md:mt-10 lg:mt-12">
           <div class="flex-shrink-0">
-            <div
-              class="flex items-center justify-center w-12 h-12 px-3 mx-auto text-white rounded-full bg-hoved"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="192"
-                height="192"
-                fill="#FFFFFF"
-                viewBox="0 0 256 256"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <path
-                  d="M80,32h96l-56,80a56,56,0,1,1-39.6,95.6"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="16"
-                ></path>
-              </svg>
-            </div>
+            <div class="steps-number">3</div>
           </div>
-          <h3
-            class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl dark:text-white"
-          >
-            Bli kontaktet
-          </h3>
-          <p class="py-4 text-gray-500 text-md dark:text-gray-300">
-            Asbjørn Ness Web tar kontakt med deg. Vi tar en uforpliktende samtale før vi inngår avtale.
+          <h3 class="steps-title">Bli kontaktet</h3>
+          <p class="steps-text">
+            Asbjørn Ness Web tar kontakt med deg. Vi tar en uforpliktende
+            samtale før vi inngår avtale.
           </p>
         </li>
       </ul>
@@ -194,12 +127,8 @@
     <section>
       <div class="container px-4 py-8 mx-auto sm:py-16 lg:px-6">
         <header class="max-w-screen-md mx-auto mb-8 lg:mb-16">
-          <h2
-            class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-          >
-            Inkludert
-          </h2>
-          <p class="text-center text-gray-500 sm:text-xl dark:text-gray-400">
+          <h2 class="regular-h2">Inkludert</h2>
+          <p class="text-center text-gray-500 sm:text-xl">
             En bestilling av nettside fra Asbjørn Ness Web inneholder følgende.
           </p>
         </header>
@@ -207,51 +136,198 @@
           class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
         >
           <article>
-            <div
-              class="feature-item"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon" viewBox="0 0 256 256" role="img">
-                <path d="M20,216H92a52,52,0,1,0-52-52C40,200,20,216,20,216Z" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                <path d="M112.4,116.2C131.6,90.3,180.4,31,225,31c0,44.6-59.3,93.4-85.2,112.6" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                <path d="M133,90.6A85.4,85.4,0,0,1,165.4,123" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-utseende"
+              >
+                <title id="feature-icon-utseende">Utseende</title>
+                <path
+                  d="M20,216H92a52,52,0,1,0-52-52C40,200,20,216,20,216Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M112.4,116.2C131.6,90.3,180.4,31,225,31c0,44.6-59.3,93.4-85.2,112.6"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M133,90.6A85.4,85.4,0,0,1,165.4,123"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
               </svg>
             </div>
             <h3 class="feature-title">Utseende</h3>
             <p class="feature-text">
-              Nettsiden bygges raskt med ferdige <span data-tooltip-target="tooltip-komponenter">komponenter</span>. Eller egentilpassede der det er behov. Til det bruker jeg Tailwind.
+              Nettsiden bygges raskt med ferdige
+              <span data-tooltip-target="tooltip-komponenter">komponenter</span
+              >. Eller egentilpassede der det er behov. Til det bruker jeg
+              Tailwind.
             </p>
-            <div id="tooltip-komponenter" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            <div
+              id="tooltip-komponenter"
+              role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip"
+            >
               En komponent er en del av en nettside.
               <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
+            </div>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon" viewBox="0 0 256 256"><rect fill="none"></rect><path d="M24,184V161.1C24,103.6,70.2,56.2,127.6,56A104,104,0,0,1,232,160v24a8,8,0,0,1-8,8H32A8,8,0,0,1,24,184Z" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="128" y1="56" x2="128" y2="88" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="27.5" y1="133.1" x2="58.5" y2="141.4" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="228.5" y1="133.1" x2="197.5" y2="141.4" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="103.4" y1="192" x2="171.8" y2="102.9" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-system"
+              >
+                <title id="feature-icon-system">System</title>
+                <rect fill="none"></rect>
+                <path
+                  d="M24,184V161.1C24,103.6,70.2,56.2,127.6,56A104,104,0,0,1,232,160v24a8,8,0,0,1-8,8H32A8,8,0,0,1,24,184Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <line
+                  x1="128"
+                  y1="56"
+                  x2="128"
+                  y2="88"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="27.5"
+                  y1="133.1"
+                  x2="58.5"
+                  y2="141.4"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="228.5"
+                  y1="133.1"
+                  x2="197.5"
+                  y2="141.4"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="103.4"
+                  y1="192"
+                  x2="171.8"
+                  y2="102.9"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
             </div>
             <h3 class="feature-title">System</h3>
             <p class="feature-text">
-              Nettsiden blir bygd så du kan redigere selv. Til det bruker jeg ProcessWire, som er sikkert og brukervennlig, og krever lite vedlikehold.
+              Nettsiden blir bygd så du kan redigere selv. Til det bruker jeg
+              ProcessWire, som er sikkert og brukervennlig, og krever lite
+              vedlikehold.
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon" fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="224 208 32 208 32 48" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="224 96 160 152 96 104 32 160" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="fill-white"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-statistikk"
+              >
+                <title id="feature-icon-statistikk">Statistikk</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <polyline
+                  points="224 208 32 208 32 48"
+                  fill="none"
+                  class="currentcolor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <polyline
+                  points="224 96 160 152 96 104 32 160"
+                  fill="none"
+                  class="currentcolor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+              </svg>
             </div>
             <h3 class="feature-title">Statistikk</h3>
             <p class="feature-text">
-              Statistikk er nyttig. Jeg anbefaler Swetrix. Det er et gratis og ivaretar personvernet. Andre løsninger kan også velges.
+              Statistikk er nyttig. Jeg anbefaler Swetrix. Det er et gratis og
+              ivaretar personvernet. Andre løsninger kan også velges.
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon"  fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M34.1,140.7a72.1,72.1,0,1,1,25.2,25.2h0L34.4,173a6,6,0,0,1-7.4-7.4l7.1-24.9Z" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M92.1,175.9a71.9,71.9,0,0,0,104.6,38h0l24.9,7.1a6,6,0,0,0,7.4-7.4l-7.1-24.9h0a71.9,71.9,0,0,0-58-108.6" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="currentColor"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-radgivning"
+              >
+                <title id="feature-icon-radgivning">Rådgivning</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M34.1,140.7a72.1,72.1,0,1,1,25.2,25.2h0L34.4,173a6,6,0,0,1-7.4-7.4l7.1-24.9Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M92.1,175.9a71.9,71.9,0,0,0,104.6,38h0l24.9,7.1a6,6,0,0,0,7.4-7.4l-7.1-24.9h0a71.9,71.9,0,0,0-58-108.6"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
             </div>
             <h3 class="feature-title">Rådgivning</h3>
             <p class="feature-text">
@@ -260,61 +336,283 @@
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon"  fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="128" x2="224" y2="32" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M195.9,60.1a96.2,96.2,0,1,0,18.7,26.5" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M161.9,94.1a47.9,47.9,0,1,0,14,31.2" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="currentColor"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-formal"
+              >
+                <title id="feature-icon-formal">Formål og målgruppe</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="128"
+                  y1="128"
+                  x2="224"
+                  y2="32"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M195.9,60.1a96.2,96.2,0,1,0,18.7,26.5"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M161.9,94.1a47.9,47.9,0,1,0,14,31.2"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
             </div>
-            <h3 class="feature-title">
-             Formål og målgruppe
-            </h3>
+            <h3 class="feature-title">Formål og målgruppe</h3>
             <p class="feature-text">
               Et nettsted er til for noen, og har et formål. Sammen lager vi
               beste løsning for å nå ditt mål.
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon"  fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M224,127.4a95.6,95.6,0,0,1-28.2,68.5c-36.9,36.9-97.3,37.3-134.7.9A96,96,0,0,1,128.6,32a8.1,8.1,0,0,1,7.8,9.8,32,32,0,0,0,30.8,39,8,8,0,0,1,8,8,32,32,0,0,0,39,30.8A8.1,8.1,0,0,1,224,127.4Z" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><circle cx="156" cy="172" r="12"></circle><circle cx="92" cy="164" r="12"></circle><circle cx="84" cy="108" r="12"></circle><circle cx="136" cy="124" r="12"></circle></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="currentColor"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-personvern"
+              >
+                <title id="feature-icon-personvern">Personvern</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M224,127.4a95.6,95.6,0,0,1-28.2,68.5c-36.9,36.9-97.3,37.3-134.7.9A96,96,0,0,1,128.6,32a8.1,8.1,0,0,1,7.8,9.8,32,32,0,0,0,30.8,39,8,8,0,0,1,8,8,32,32,0,0,0,39,30.8A8.1,8.1,0,0,1,224,127.4Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <circle cx="156" cy="172" r="12"></circle>
+                <circle cx="92" cy="164" r="12"></circle>
+                <circle cx="84" cy="108" r="12"></circle>
+                <circle cx="136" cy="124" r="12"></circle>
+              </svg>
             </div>
             <h3 class="feature-title">Personvern</h3>
             <p class="feature-text">
-              GDPR. Schrems II. Informasjonskapsler. Vi tar hensyn til behandling av data og personopplysninger.
+              GDPR. Schrems II. Informasjonskapsler. Vi tar hensyn til
+              behandling av data og personopplysninger.
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon" fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="48" y1="40" x2="208" y2="216" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M91.4,87.8A39.5,39.5,0,0,0,88,104" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M87,35.3A80,80,0,0,1,208,104" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M161.9,216A44,44,0,0,1,84,188c0-41.5-36-28-36-84A79.9,79.9,0,0,1,63.3,56.9" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M163.1,119a24,24,0,0,0,4.9-15,39.9,39.9,0,0,0-53-37.8" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M166.9,170.8A20.1,20.1,0,0,1,140,152a25.5,25.5,0,0,1,1.6-9.1" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="currentColor"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-universell"
+              >
+                <title id="feature-icon-universell">Universell utforming</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="48"
+                  y1="40"
+                  x2="208"
+                  y2="216"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M91.4,87.8A39.5,39.5,0,0,0,88,104"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M87,35.3A80,80,0,0,1,208,104"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M161.9,216A44,44,0,0,1,84,188c0-41.5-36-28-36-84A79.9,79.9,0,0,1,63.3,56.9"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M163.1,119a24,24,0,0,0,4.9-15,39.9,39.9,0,0,0-53-37.8"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M166.9,170.8A20.1,20.1,0,0,1,140,152a25.5,25.5,0,0,1,1.6-9.1"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
             </div>
             <h3 class="feature-title">Universell utforming</h3>
             <p class="feature-text">
-              Alle tekniske løsninger skal kunne brukes av hvem som helst (<a href="https://www.uutilsynet.no/regelverk/kva-seier-forskrifta/153#kven_skal_flge_reglane">uutilsynet.no</a>). Derfor er universell utforming inkludert.
+              Alle tekniske løsninger skal kunne brukes av hvem som helst (<a
+                href="https://www.uutilsynet.no/regelverk/kva-seier-forskrifta/153#kven_skal_flge_reglane"
+                >uutilsynet.no</a
+              >). Derfor er universell utforming inkludert.
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon"  fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="64" y="24" width="128" height="208" rx="16" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><line x1="64" y1="56" x2="192" y2="56" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="64" y1="200" x2="192" y2="200" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="currentColor"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-pc"
+              >
+                <title id="feature-icon-pc">PC- og mobiltilpasset</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <rect
+                  x="64"
+                  y="24"
+                  width="128"
+                  height="208"
+                  rx="16"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></rect>
+                <line
+                  x1="64"
+                  y1="56"
+                  x2="192"
+                  y2="56"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="64"
+                  y1="200"
+                  x2="192"
+                  y2="200"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
             </div>
             <h3 class="feature-title">PC- og mobiltilpasset</h3>
             <p class="feature-text">
-              Nettsiden må kunne fungere hvor som helst. Vi leverer derfor et responsivt design, som tilpasser seg skjermstørrelsen.
+              Nettsiden må kunne fungere hvor som helst. Vi leverer derfor et
+              responsivt design, som tilpasser seg skjermstørrelsen.
             </p>
           </article>
           <article>
-            <div
-              class="feature-item"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 feature-icon" fill="#FFF" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="68" cy="188" r="28" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="188" cy="68" r="28" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="68" cy="68" r="28" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><path d="M68,160v-8a23.9,23.9,0,0,1,24-24h72a23.9,23.9,0,0,0,24-24V96" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="68" y1="96" x2="68" y2="160" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            <div class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 feature-icon"
+                class="currentColor"
+                viewBox="0 0 256 256"
+                role="img"
+                aria-hidden="false"
+                aria-labelledby="feature-icon-kildekode"
+              >
+                <title id="feature-icon-kildekode">Kildekode</title>
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="68"
+                  cy="188"
+                  r="28"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <circle
+                  cx="188"
+                  cy="68"
+                  r="28"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <circle
+                  cx="68"
+                  cy="68"
+                  r="28"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <path
+                  d="M68,160v-8a23.9,23.9,0,0,1,24-24h72a23.9,23.9,0,0,0,24-24V96"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <line
+                  x1="68"
+                  y1="96"
+                  x2="68"
+                  y2="160"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
             </div>
             <h3 class="feature-title">Kildekode</h3>
             <p class="feature-text">
-              Du eier bruksretten til all kode som blir skrevet. Koden blir lagret i en GitHub-konto.
+              Du eier bruksretten til all kode som blir skrevet. Koden blir
+              lagret i en GitHub-konto.
             </p>
           </article>
         </div>
@@ -324,27 +622,23 @@
     <!-- Order form -->
     <section class="px-0 text-gray-600 sm:px-4" id="bli-kontaktet">
       <div
-        class="container px-5 py-24 mx-auto bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:w-3/5"
+        class="container px-5 py-24 mx-auto bg-white rounded-lg shadow-lg lg:w-3/5"
       >
         <div class="flex flex-col w-full mb-12 text-center">
-          <h2
-            class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-          >
-            Bli kontaktet
-          </h2>
+          <h2 class="regular-h2">Bli kontaktet</h2>
           <p class="mx-auto leading-relaxed sm:text-xl lg:w-4/5 md:w-4/5">
             Få tilsendt en e-post med noen
             <button
-              class="text-hoved hover:text-middels""
+              class="underline text-hoved hover:text-middels hover:cursor-help"
               data-modal-target="default"
               data-modal-toggle="defaultModal"
               type="button"
             >
               spørsmål
             </button>
-            om hvilken nettside du ønsker å bestille. Henvendelsen er uforpliktende.
+            om hvilken nettside du ønsker å bestille. Henvendelsen er
+            uforpliktende.
           </p>
-
         </div>
 
         <!-- Main modal -->
@@ -356,17 +650,15 @@
         >
           <div class="relative w-full h-full max-w-2xl md:h-auto">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
               <!-- Modal header -->
               <div
-                class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
+                class="flex items-start justify-between p-4 border-b rounded-t"
               >
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                  Spørsmål
-                </h3>
+                <h3 class="text-xl font-semibold text-gray-900">Spørsmål</h3>
                 <button
                   type="button"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
                   data-modal-hide="defaultModal"
                 >
                   <svg
@@ -387,30 +679,33 @@
               </div>
               <!-- Modal body -->
               <div class="p-6 space-y-6">
-                <p
-                  class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                >
-                1. Har du noe innhold klart? Det kan være en oversikt over hva nettstedet skal inneholde, en tegning eller et dokument med alt innholdet.</p>
+                <p class="text-base leading-relaxed text-gray-500">
+                  1. Har du noe innhold klart? Det kan være en oversikt over hva
+                  nettstedet skal inneholde, en tegning eller et dokument med
+                  alt innholdet.
+                </p>
 
-                <p
-                  class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                >2. Hva vil du oppnå med nettsiden? Hva er formålet, og hvem er den til for?</p>
+                <p class="text-base leading-relaxed text-gray-500">
+                  2. Hva vil du oppnå med nettsiden? Hva er formålet, og hvem er
+                  den til for?
+                </p>
 
-                <p
-                  class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                >3. Har du noen andre tanker om hva nettsiden skal inneholde?</p>
+                <p class="text-base leading-relaxed text-gray-500">
+                  3. Har du noen andre tanker om hva nettsiden skal inneholde?
+                </p>
 
-                <p
-                  class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                >4. Har du noen tanker om utseende? Det kan være fargebruk, skrifttype, logo og annet.</p>
+                <p class="text-base leading-relaxed text-gray-500">
+                  4. Har du noen tanker om utseende? Det kan være fargebruk,
+                  skrifttype, logo og annet.
+                </p>
 
-                <p
-                  class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                >Se https://www.snobjorn.no/blogg/bestilling-av-ny-webside/ for tips til hvordan du kan formulere et svar.</p>
+                <p class="text-base leading-relaxed text-gray-500">
+                  Se https://www.snobjorn.no/blogg/bestilling-av-ny-webside/ for
+                  tips til hvordan du kan formulere et svar.
+                </p>
 
-                <p
-                  class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                >5. Har du et webhotell fra før? Dersom ja, hvilket?
+                <p class="text-base leading-relaxed text-gray-500">
+                  5. Har du et webhotell fra før? Dersom ja, hvilket?
                 </p>
               </div>
             </div>
@@ -418,7 +713,13 @@
         </div>
 
         <div class="mx-auto lg:w-2/3 md:w-4/5">
-          <form class="flex flex-wrap -m-2" action="https://formkeep.com/f/d05cc08250c2" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+          <form
+            class="flex flex-wrap -m-2"
+            action="https://formkeep.com/f/d05cc08250c2"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data"
+            method="POST"
+          >
             <div class="w-full p-2 sm:w-1/2">
               <div class="relative">
                 <label for="name" class="text-sm leading-7 text-gray-600"
@@ -449,8 +750,9 @@
               </div>
             </div>
 
-            <div class="w-full p-8 ">
-              <button type="submit"
+            <div class="w-full p-8">
+              <button
+                type="submit"
                 class="flex px-8 py-2 mx-auto text-lg text-white duration-300 ease-in border-0 rounded bg-middels focus:outline-none hover:bg-hoved"
               >
                 Bli kontaktet på e-post
@@ -461,65 +763,64 @@
           <div
             class="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200"
           >
-            <a class="text-hoved hover:text-middels">asbjorn@snobjorn.no</a>
+            <a
+              class="text-hoved hover:text-middels"
+              href="mailto:asbjorn@snobjorn.no"
+              >asbjorn@snobjorn.no</a
+            >
           </div>
-            
         </div>
       </div>
     </section>
 
     <!-- Motto -->
     <section class="w-full p-8 mx-auto">
-      <img src="./img/logo-white.svg" class="w-20 h-20 m-auto mb-8"/>
-      <p class="w-full m-auto text-lg text-center text-gray-600 dark:text-white md:w-2/3 md:text-3xl">
-          <span class="font-bold text-hoved">
-              “
-          </span>
-          Mitt motto er en enklere digital hverdag. Jeg hjelper bedrifter med å sette opp nye systemløsninger. Setter opp og drifter nettsider.
-          <span class="font-bold text-hoved">
-              ”
-          </span>
+      <img src="./img/logo-white.svg" class="w-20 h-20 m-auto mb-8" />
+      <p
+        class="w-full m-auto text-lg text-center text-gray-600 md:w-2/3 md:text-3xl"
+      >
+        <span class="italic">
+          &mdash; Få en enklere digital hverdag! Jeg hjelper deg med å sette opp
+          nye nettsider og systemløsninger, og med driften.
+        </span>
       </p>
       <div class="flex items-center justify-center mt-8">
-          <a href="#" class="relative block">
-              <img alt="profil" src="./img/asbjorn.jpeg" class="object-cover w-10 h-10 mx-auto rounded-full "/>
-          </a>
-          <div class="flex items-center justify-center ml-2">
-              <span class="mr-2 text-lg font-semibold">
-                  Asbjørn Ness
-              </span>
-              <span class="text-xl font-light text-gray-400">
-                  /
-              </span>
-              <span class="ml-2 text-gray-400 text-md">
-                  utvikler
-              </span>
-          </div>
+        <a href="#" class="relative block">
+          <img
+            alt="profil"
+            src="./img/asbjorn.jpeg"
+            class="object-cover w-10 h-10 mx-auto rounded-full"
+          />
+        </a>
+        <div class="flex items-center justify-center ml-2">
+          <span class="mr-2 text-lg font-semibold"> Asbjørn Ness </span>
+          <span class="text-xl font-light text-gray-400"> / </span>
+          <span class="ml-2 text-gray-400 text-md"> webutvikler </span>
+        </div>
       </div>
     </section>
 
     <!-- Customers -->
     <section>
       <div class="container px-4 py-8 mx-auto lg:py-16">
-        <h2
-          class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-        >
-          Kunder
-        </h2>
-        <p class="text-center text-gray-500 sm:text-xl dark:text-gray-400">
+        <h2 class="regular-h2">Kunder</h2>
+        <p class="text-center text-gray-500 sm:text-xl">
           Noen av mine kunder innefor foreninger, næringsliv og stifelser.
         </p>
         <div
-          class="grid grid-cols-2 gap-8 pt-12 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400"
+          class="grid grid-cols-2 gap-8 pt-12 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5"
         >
-          
           <!-- Bærum næringsråd-->
           <a href="https://bn.no/" class="flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 300 115.31"
               class="h-12"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="customer-icon-bn"
             >
+              <title id="customer-icon-bn">Bærum Næringsråd</title>
               <defs>
                 <style>
                   .cls-1 {
@@ -602,16 +903,30 @@
             </svg>
           </a>
           <!-- VID vitenskapelige høgskole -->
-          <a href="https://www.vid.no/" class="flex items-center justify-center">
-            <img src="./img/vid.png" class="h-12" alt="VID vitenskapelige høgskole">
+          <a
+            href="https://www.vid.no/"
+            class="flex items-center justify-center"
+          >
+            <img
+              src="./img/vid.png"
+              class="h-12"
+              alt="VID vitenskapelige høgskole"
+            />
           </a>
           <!-- Diakonhjemmet -->
-          <a href="https://diakonhjemmet.no/" class="flex items-center justify-center">
+          <a
+            href="https://diakonhjemmet.no/"
+            class="flex items-center justify-center"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 160 70"
               class="h-12"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="customer-icon-diakonhjemmet"
             >
+              <title id="customer-icon-diakonhjemmet">Diakonhjemmet</title>
               <g fill="#6d6e70">
                 <path
                   d="M5.2 41.8H5v17h4.6c4.8 0 7.8-3.3 7.8-8.5 0-5.3-2.9-8.5-7.7-8.5H5.2zm4.4 2c3.6 0 5.5 2.2 5.5 6.5s-1.9 6.5-5.6 6.5H7.2v-13h2.4zM21.7 42.1v2.4h-2.1v-2.4h2.1zm-.2 4.3h-1.9v12.4h2.1V46.4h-.2zM24.6 48.8l-.1.2 1.9 1 .1-.2c.2-.4.8-1.7 2.8-1.7 1.5 0 2.2.7 2.2 2v.5c-5.3 1-7.3 2.3-7.3 5 0 2.4 1.8 3.5 3.6 3.5 1.7 0 3-.8 3.8-1.6.1.5.2 1.4.2 1.4H34l-.1-.3c-.2-.6-.3-1.3-.3-2.5v-6c0-2.8-2.2-3.8-4.3-3.8-2.1-.1-3.8.8-4.7 2.5zm1.7 6.7c0-1.5 1.7-2.5 5.2-3.2v2.9c-1 1.1-2.4 1.8-3.5 1.8-.8.1-1.7-.5-1.7-1.5zM38.3 41.8h-1.9v17h2.1v-3.7c.1-.1 1.6-1.8 1.9-2.2.3.5 3.1 5.9 3.1 5.9h2.4s-3.9-7.5-4.1-7.7c.2-.2 3.7-4.6 3.7-4.6H43s-4 5-4.5 5.7V41.9h-.2zM46.6 52.6c0 3.9 2 6.4 5.1 6.4 3.1 0 5.1-2.5 5.1-6.4s-2-6.4-5.1-6.4c-3.1 0-5.1 2.5-5.1 6.4zm2 0c0-2.9 1.1-4.6 3-4.6s3 1.7 3 4.6-1.1 4.6-3 4.6c-1.8-.1-3-1.8-3-4.6zM61.1 47.8v-1.4H59v12.4h2.1v-9c.8-.8 2.1-1.7 3.2-1.7 1.2 0 1.7.6 1.7 1.9v8.8h2.1v-8.9c0-2.3-1.4-3.7-3.7-3.7-1.1 0-2.3.5-3.3 1.6zM73.4 41.8h-1.9v17h2.1v-9c.8-.8 2.1-1.7 3.2-1.7 1.2 0 1.7.6 1.7 1.9v8.8h2.1v-8.9c0-2.3-1.4-3.7-3.7-3.7-1.2 0-2.3.6-3.4 1.6v-6h-.1zM86.1 46.4v14c0 1.6-1.1 2.7-2.7 2.7-.6 0-1.1-.1-1.5-.3l-.1-.1V61l.3.1c.2.1.5.2.8.2.8 0 1.1-.2 1.1-1V46.4h2.1zm-.2-4.3H84v2.4h2.1v-2.4h-.2zM88.4 52.6c0 4.7 2.9 6.4 5.4 6.4 2.7 0 3.9-1.4 4.8-2.9l.1-.2L97 55l-.1.2c-.7 1.2-1.8 1.9-3.1 1.9-1.8 0-3.2-1.7-3.3-4h7.7v-1.3c0-3.5-1.8-5.6-4.8-5.6s-5 2.5-5 6.4zm5.1-4.6c1.6 0 2.5 1.2 2.6 3.2h-5.6c.3-2 1.3-3.2 3-3.2zM109.1 47.9c-.6-1.1-1.7-1.8-3.1-1.8-1.2 0-2.4.6-3.3 1.5v-1.3h-2.1v12.4h2.1v-9c.9-.8 1.8-1.7 3.1-1.7 1.1 0 1.6.7 1.6 2v8.7h2.1v-9c.9-.8 1.8-1.7 3.1-1.7 1.1 0 1.6.7 1.6 2v8.7h2.1V50c0-3.2-1.9-3.8-3.5-3.8-1.2 0-2.5.6-3.7 1.7zM128 47.9c-.6-1.1-1.7-1.8-3.1-1.8-1.2 0-2.4.6-3.3 1.5v-1.3h-2.1v12.4h2.1v-9c.9-.8 1.8-1.7 3.1-1.7 1.1 0 1.6.7 1.6 2v8.7h2.1v-9c.9-.8 1.8-1.7 3.1-1.7 1.1 0 1.6.7 1.6 2v8.7h2.1V50c0-3.2-1.9-3.8-3.5-3.8-1.2 0-2.5.6-3.7 1.7zM137.4 52.6c0 4.7 2.9 6.4 5.4 6.4 2.7 0 3.9-1.4 4.8-2.9l.1-.2-1.7-.9-.1.2c-.7 1.2-1.8 1.9-3.1 1.9-1.8 0-3.2-1.7-3.3-4h7.7v-1.3c0-3.5-1.8-5.6-4.8-5.6s-5 2.5-5 6.4zm5.1-4.6c1.6 0 2.5 1.2 2.6 3.2h-5.6c.3-2 1.3-3.2 3-3.2zM152 42.5h-1.9v3.9h-2v1.9h2v8.5c0 1.8 1.1 2.2 2.8 2.2.9 0 1.6-.1 2-.2h.2V57h-.2c-.5.1-.9.1-1.4.1-1.1 0-1.1-.4-1.1-.6v-8.3h2.8v-1.9h-2.8v-3.9h-.4z"
@@ -628,268 +943,181 @@
             </svg>
           </a>
           <!-- Madagaskar Reiser -->
-          <a href="https://madagaskar-reiser.no/" class="flex items-center justify-center">
+          <a
+            href="https://madagaskar-reiser.no/"
+            class="flex items-center justify-center"
+          >
             <svg
-              version="1.1"
-              id="svg2"
-              xml:space="preserve"
-              class="h-12"
-              viewBox="0 0 676.79333 263.29068"
-              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+              id="Layer_1"
+              data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:svg="http://www.w3.org/2000/svg"
+              viewBox="0 0 484.27 176.88"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="customer-icon-madagaskar"
             >
-              <defs id="defs6">
-                <clipPath clipPathUnits="userSpaceOnUse" id="clipPath16">
-                  <path d="M 0,197.468 H 507.595 V 0 H 0 Z" id="path14" />
-                </clipPath>
+              <title id="customer-icon-madagaskar">Madagaskar Reiser</title>
+              <defs>
+                <style>
+                  .cls-1,
+                  .cls-2 {
+                    fill: #482027;
+                  }
+
+                  .cls-2,
+                  .cls-3 {
+                    fill-rule: evenodd;
+                  }
+
+                  .cls-3 {
+                    fill: #c19991;
+                  }
+                </style>
               </defs>
-              <sodipodi:namedview
-                id="namedview4"
-                pagecolor="#ffffff"
-                bordercolor="#666666"
-                borderopacity="1.0"
-                inkscape:pageshadow="2"
-                inkscape:pageopacity="0.0"
-                inkscape:pagecheckerboard="0"
-              />
-              <g
-                id="g8"
-                inkscape:groupmode="layer"
-                inkscape:label="madagaskar reiser logo vektor"
-                transform="matrix(1.3333333,0,0,-1.3333333,0,263.29067)"
-              >
-                <g id="g10">
-                  <g id="g12" clip-path="url(#clipPath16)">
-                    <g id="g18" transform="translate(147.8532,9.342)">
-                      <path
-                        d="m 0,0 h -99.344 c -10.506,0 -19.076,8.569 -19.076,19.076 0,10.506 8.57,19.076 19.076,19.076 h 83.075 c 3.438,0 6.278,2.84 6.278,6.278 V 65.602 H 4.903 V 44.43 c 0,-11.659 -9.513,-21.171 -21.172,-21.171 h -83.075 c -2.285,0 -4.183,-1.898 -4.183,-4.183 0,-2.286 1.898,-4.182 4.183,-4.182 H 0 c 4.113,0 7.447,-3.335 7.447,-7.448 C 7.447,3.334 4.113,0 0,0"
-                        style="
-                          fill: #482128;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path20"
-                      />
-                    </g>
-                    <g id="g22" transform="translate(130.2532,47.4943)">
-                      <path
-                        d="M 0,0 H 1.331 C 3.144,0 4.789,0.789 5.94,2.038 l 7.549,-13.074 c -1.676,-1.182 -3.529,-2.125 -5.51,-2.784 z"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path24"
-                      />
-                    </g>
-                    <path
-                      d="m 121.274,47.494 h 6.164 V 32.601 h -6.164 z m -12.754,0 h 6.165 V 32.601 h -6.165 z m -12.754,0 h 6.164 V 32.601 h -6.164 z m -12.754,0 h 6.165 V 32.601 h -6.165 z m -12.754,0 h 6.165 V 32.601 H 70.258 Z M 76.423,9.342 h -6.165 v 14.894 h 6.165 z m 12.754,0 h -6.165 v 14.894 h 6.165 z m 12.753,0 h -6.164 v 14.894 h 6.164 z m 12.754,0 h -6.165 v 14.894 h 6.165 z m 12.754,0 h -6.164 v 14.894 h 6.164 z m 12.754,0 h -6.165 v 14.894 h 6.165 z"
-                      style="
-                        fill: #c19991;
-                        fill-opacity: 1;
-                        fill-rule: evenodd;
-                        stroke: none;
-                      "
-                      id="path26"
-                    />
-                    <path
-                      d="m 57.505,47.494 h 6.164 V 32.601 h -6.164 z"
-                      style="
-                        fill: #c19991;
-                        fill-opacity: 1;
-                        fill-rule: evenodd;
-                        stroke: none;
-                      "
-                      id="path28"
-                    />
-                    <g id="g30" transform="translate(38.4308,44.6008)">
-                      <path
-                        d="M 0,0 C 1.78,1.113 3.755,1.942 5.86,2.421 L 16.338,-12 h -6.259 c -0.425,0 -0.837,-0.065 -1.225,-0.188 z"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path32"
-                      />
-                    </g>
-                    <g id="g34" transform="translate(29.6842,25.3361)">
-                      <path
-                        d="m 0,0 c -0.164,1.004 -0.251,2.033 -0.251,3.082 0,1.049 0.087,2.078 0.251,3.082 H 16.017 C 15.176,5.396 14.643,4.293 14.643,3.082 14.643,1.87 15.175,0.769 16.016,0 Z"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path36"
-                      />
-                    </g>
-                    <g id="g38" transform="translate(44.4742,9.7736)">
-                      <path
-                        d="m 0,0 c -2.117,0.459 -4.104,1.271 -5.898,2.37 l 8.884,12.228 c 0.336,-0.089 0.688,-0.136 1.049,-0.136 h 6.471 z"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path40"
-                      />
-                    </g>
-                    <path
-                      d="m 63.669,9.342 h -6.164 v 14.894 h 6.164 z"
-                      style="
-                        fill: #c19991;
-                        fill-opacity: 1;
-                        fill-rule: evenodd;
-                        stroke: none;
-                      "
-                      id="path42"
-                    />
-                    <g id="g44" transform="translate(35.1544,55.6545)">
-                      <path
-                        d="m 0,0 c -3.211,0 -5.838,2.627 -5.838,5.838 v 0.001 c 0,3.211 2.627,5.839 5.838,5.839 h 12.789 c 6.906,0 12.556,5.65 12.556,12.555 v 66.205 h 19.666 c 39.925,0 72.591,-32.665 72.591,-72.589 l 0,-17.849 z"
-                        style="
-                          fill: #482128;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path46"
-                      />
-                    </g>
-                    <g id="g48" transform="translate(146.7102,102.4123)">
-                      <path
-                        d="m 0,0 c 0.869,-1.985 1.653,-4.016 2.344,-6.087 l -38.602,-11.107 z m -12.825,19.782 c 1.445,-1.591 2.818,-3.249 4.119,-4.964 l -32.868,-22.34 z m -17.734,14.286 c 1.887,-1.085 3.719,-2.254 5.495,-3.5 L -51.197,-0.004 Z"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path50"
-                      />
-                    </g>
-                    <g id="g52" transform="translate(152.7448,74.383)">
-                      <path
-                        d="m 0,0 c 0.003,-0.294 0.011,-0.586 0.011,-0.88 v -17.849 h -16.773 v 0.017 c 9.249,0.393 16.694,8.079 16.694,17.42 l 0,1.292 z"
-                        style="
-                          fill: #482128;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path54"
-                      />
-                    </g>
-                    <g id="g56" transform="translate(52.1799,107.4563)">
-                      <path
-                        d="m 0,0 c -41.363,41.363 -45.111,35.057 -32.329,78.768 7.93,-5.623 13.893,-13.835 16.662,-23.403 12.691,12.945 34.252,12.925 46.933,-0.01 2.769,9.569 8.733,17.78 16.662,23.403 C 60.711,35.047 56.962,41.354 15.599,-0.01 11.472,-4.138 4.125,-4.126 0,0"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path58"
-                      />
-                    </g>
-                    <g id="g60" transform="translate(76.6633,161.632)">
-                      <path
-                        d="m 0,0 c 8.749,0 15.842,-7.092 15.842,-15.842 0,-8.75 -7.093,-15.842 -15.842,-15.842 -8.749,0 -15.842,7.092 -15.842,15.842 C -15.842,-7.092 -8.749,0 0,0"
-                        style="
-                          fill: #482128;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path62"
-                      />
-                    </g>
-                    <g id="g64" transform="translate(76.6633,152.1535)">
-                      <path
-                        d="m 0,0 c 3.515,0 6.364,-2.849 6.364,-6.363 0,-3.515 -2.849,-6.364 -6.364,-6.364 -3.515,0 -6.364,2.849 -6.364,6.364 C -6.364,-2.849 -3.515,0 0,0"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path66"
-                      />
-                    </g>
-                    <g id="g68" transform="translate(43.2961,161.632)">
-                      <path
-                        d="m 0,0 c -8.749,0 -15.843,-7.092 -15.843,-15.842 0,-8.75 7.094,-15.842 15.843,-15.842 8.749,0 15.842,7.092 15.842,15.842 C 15.842,-7.092 8.749,0 0,0"
-                        style="
-                          fill: #482128;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path70"
-                      />
-                    </g>
-                    <g id="g72" transform="translate(43.2961,152.1535)">
-                      <path
-                        d="m 0,0 c -3.515,0 -6.364,-2.849 -6.364,-6.363 0,-3.515 2.849,-6.364 6.364,-6.364 3.515,0 6.364,2.849 6.364,6.364 C 6.364,-2.849 3.515,0 0,0"
-                        style="
-                          fill: #c19991;
-                          fill-opacity: 1;
-                          fill-rule: evenodd;
-                          stroke: none;
-                        "
-                        id="path74"
-                      />
-                    </g>
-                  </g>
-                </g>
-                <text
-                  transform="matrix(1,0,0,-1,166.8657,102.4126)"
-                  style="
-                    font-variant: normal;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-size: 70px;
-                    font-family: 'Blogger Sans';
-                    -inkscape-font-specification: BloggerSans;
-                    writing-mode: lr-tb;
-                    fill: #482128;
-                    fill-opacity: 1;
-                    fill-rule: nonzero;
-                    stroke: none;
-                  "
-                  id="text80"
-                >
-                  <tspan
-                    x="0 47.810001 81.550003 114.45 147.49001 181.37 215.67 242.97 273.42001 307.16"
-                    y="0"
-                    sodipodi:role="line"
-                    id="tspan76"
-                  >
-                    Madagaskar
-                  </tspan>
-                  <tspan
-                    x="0 38.57 68.040001 85.190002 113.61 144.06"
-                    y="70"
-                    sodipodi:role="line"
-                    id="tspan78"
-                  >
-                    Reiser
-                  </tspan>
-                </text>
+              <g>
+                <path
+                  class="cls-2"
+                  d="m134.5,176.88H35.16c-10.51,0-19.08-8.57-19.08-19.08s8.57-19.08,19.08-19.08h83.08c3.44,0,6.28-2.84,6.28-6.28v-21.17h14.89v21.17c0,11.66-9.51,21.17-21.17,21.17H35.16c-2.29,0-4.18,1.9-4.18,4.18s1.9,4.18,4.18,4.18h99.34c4.11,0,7.45,3.33,7.45,7.45s-3.33,7.45-7.45,7.45h0Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m116.9,138.73h1.33c1.81,0,3.46-.79,4.61-2.04l7.55,13.07c-1.68,1.18-3.53,2.12-5.51,2.78l-7.98-13.82h0Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m126.84,176.88h-6.16v-14.89h6.16v14.89h0Zm-12.75,0h-6.16v-14.89h6.16v14.89h0Zm-12.75,0h-6.16v-14.89h6.16v14.89h0Zm-12.75,0h-6.16v-14.89h6.16v14.89h0Zm-12.75,0h-6.16v-14.89h6.16v14.89h0Zm-12.75,0h-6.16v-14.89h6.16v14.89h0Zm-6.16-38.15h6.16v14.89h-6.16v-14.89h0Zm12.75,0h6.16v14.89h-6.16v-14.89h0Zm12.75,0h6.16v14.89h-6.16v-14.89h0Zm12.75,0h6.16v14.89h-6.16v-14.89h0Zm12.75,0h6.16v14.89h-6.16v-14.89h0Z"
+                />
+                <polygon
+                  class="cls-3"
+                  points="44.16 138.73 50.32 138.73 50.32 153.62 44.16 153.62 44.16 138.73 44.16 138.73"
+                />
+                <path
+                  class="cls-3"
+                  d="m25.08,141.62c1.78-1.11,3.76-1.94,5.86-2.42l10.48,14.42h-6.26c-.42,0-.84.07-1.22.19l-8.85-12.19h0Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m16.34,160.89c-.16-1-.25-2.03-.25-3.08s.09-2.08.25-3.08h16.02c-.84.77-1.37,1.87-1.37,3.08s.53,2.31,1.37,3.08h-16.02Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m31.13,176.45c-2.12-.46-4.1-1.27-5.9-2.37l8.88-12.23c.34.09.69.14,1.05.14h6.47l-10.51,14.46h0Z"
+                />
+                <polygon
+                  class="cls-3"
+                  points="50.32 176.88 44.16 176.88 44.16 161.99 50.32 161.99 50.32 176.88 50.32 176.88"
+                />
+                <path
+                  class="cls-2"
+                  d="m21.81,130.57c-3.21,0-5.84-2.63-5.84-5.84h0c0-3.21,2.63-5.84,5.84-5.84h12.79c6.91,0,12.56-5.65,12.56-12.56V40.13h19.67c39.92,0,72.59,32.67,72.59,72.59v17.85H21.81Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m102.8,49.74c1.89,1.08,3.72,2.25,5.49,3.5l-26.13,30.57,20.64-34.07h0Zm17.73,14.29c1.44,1.59,2.82,3.25,4.12,4.96l-32.87,22.34,28.75-27.3h0Zm12.82,19.78c.87,1.99,1.65,4.02,2.34,6.09l-38.6,11.11,36.26-17.19h0Z"
+                />
+                <path
+                  class="cls-2"
+                  d="m139.4,111.84c0,.29.01.59.01.88v17.85h-16.77v-.02c9.25-.39,16.69-8.08,16.69-17.42v-1.29h.07Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m38.83,78.77C-2.53,37.4-6.28,43.71,6.5,0c7.93,5.62,13.89,13.83,16.66,23.4,12.69-12.94,34.25-12.92,46.93.01C72.87,13.84,78.83,5.63,86.76,0c12.78,43.71,9.03,37.4-32.33,78.77-4.13,4.13-11.47,4.12-15.6,0h0Z"
+                />
+                <path
+                  class="cls-2"
+                  d="m63.31,24.59c8.75,0,15.84,7.09,15.84,15.84s-7.09,15.84-15.84,15.84-15.84-7.09-15.84-15.84,7.09-15.84,15.84-15.84h0Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m63.31,34.07c3.51,0,6.36,2.85,6.36,6.36s-2.85,6.36-6.36,6.36-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36h0Z"
+                />
+                <path
+                  class="cls-2"
+                  d="m29.95,24.59c-8.75,0-15.84,7.09-15.84,15.84s7.09,15.84,15.84,15.84,15.84-7.09,15.84-15.84-7.09-15.84-15.84-15.84h0Z"
+                />
+                <path
+                  class="cls-3"
+                  d="m29.95,34.07c-3.51,0-6.36,2.85-6.36,6.36s2.85,6.36,6.36,6.36,6.36-2.85,6.36-6.36-2.85-6.36-6.36-6.36h0Z"
+                />
+              </g>
+              <g>
+                <path
+                  class="cls-1"
+                  d="m197.48,81.78c0,1.47-1.26,2.73-2.73,2.73s-2.87-1.26-2.87-2.73v-34.09l-11.27,24.08c-.56,1.12-1.54,1.68-2.73,1.68-1.12,0-2.1-.56-2.66-1.68l-11.27-24.08v34.09c0,1.47-1.33,2.73-2.94,2.73-1.47,0-2.66-1.26-2.66-2.73v-45.08c0-1.68,1.26-2.94,2.94-2.94,1.4,0,2.38.63,3.01,1.82l13.65,29.26,13.65-29.33c.7-1.26,1.75-1.75,2.94-1.75,1.68,0,2.94,1.33,2.94,2.94v45.08Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m223.87,60.15c0-5.11-2.45-7.49-7.49-7.49-2.45,0-3.78.63-5.32,1.47-.21.07-1.05.56-1.82.56-1.33,0-1.89-1.26-1.96-2.31-.28-3.22,4.97-4.55,9.8-4.55,8.75,0,12.25,4.9,12.25,14.14v15.4c0,1.4.42,2.1,1.26,2.1.21,0,.28-.07.56-.07,1.33,0,2.03,1.19,2.03,2.38,0,1.75-1.61,2.38-3.15,2.38-2.31,0-4.2-1.33-5.25-3.5-2.66,2.45-5.81,3.71-9.59,3.71-7.21,0-10.71-4.27-10.71-10.57v-.28c0-6.86,4.06-10.36,12.32-10.36,2.52,0,4.9.35,7.07.98v-3.99Zm-14,13.44v.28c0,3.29,1.47,5.6,6.16,5.6,3.01,0,5.39-.98,7.84-3.08v-7.56c-2.31-.7-5.04-1.05-7.14-1.05-5.74,0-6.86,2.66-6.86,5.81Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m257.68,49.44v-13.72c0-1.47.98-2.66,2.73-2.66s2.73,1.19,2.73,2.66v40.11c0,1.96.42,3.15,1.82,4.2.28.42.49.77.49,1.4,0,1.47-1.26,2.45-2.45,2.45-1.61,0-2.87-.91-3.71-2.24-3.08,1.54-6.44,2.73-9.94,2.73-7.35,0-11.13-5.39-11.13-13.23v-8.89c0-8.33,2.8-14.14,11.69-14.14,2.31,0,5.25.49,7.77,1.33Zm0,4.9c-2.31-.98-5.39-1.47-7.07-1.47-5.11,0-6.93,2.87-6.93,9.38v8.89c0,5.46,2.17,8.33,6.79,8.33,2.24,0,4.97-.77,7.35-2.03-.14-.56-.14-1.12-.14-1.61v-21.49Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m290.51,60.15c0-5.11-2.45-7.49-7.49-7.49-2.45,0-3.78.63-5.32,1.47-.21.07-1.05.56-1.82.56-1.33,0-1.89-1.26-1.96-2.31-.28-3.22,4.97-4.55,9.8-4.55,8.75,0,12.25,4.9,12.25,14.14v15.4c0,1.4.42,2.1,1.26,2.1.21,0,.28-.07.56-.07,1.33,0,2.03,1.19,2.03,2.38,0,1.75-1.61,2.38-3.15,2.38-2.31,0-4.2-1.33-5.25-3.5-2.66,2.45-5.81,3.71-9.59,3.71-7.21,0-10.71-4.27-10.71-10.57v-.28c0-6.86,4.06-10.36,12.32-10.36,2.52,0,4.9.35,7.07.98v-3.99Zm-14,13.44v.28c0,3.29,1.47,5.6,6.16,5.6,3.01,0,5.39-.98,7.84-3.08v-7.56c-2.31-.7-5.04-1.05-7.14-1.05-5.74,0-6.86,2.66-6.86,5.81Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m326.35,50.21c1.54-2.87,4.06-4.06,5.6-4.06s2.59,1.05,2.59,2.45c0,.7-.28,1.19-.49,1.4-2.66,2.59-3.78,3.36-3.78,6.79v4.34c0,7.14-4.27,12.6-12.67,12.6-2.1,0-3.92-.28-5.53-.91-.63,1.19-.84,2.38-.84,3.22,0,2.45,2.24,3.08,3.78,3.08h2.94c7.98,0,14,3.29,14,10.29s-6.09,11.41-14.35,11.41-13.44-3.99-13.44-10.78c0-3.43,1.33-6.09,3.71-8.4-1.61-1.61-2.1-3.78-2.1-5.39s.56-3.85,2.66-5.74c-2.45-2.31-3.78-5.74-3.78-9.87,0-7.28,4.13-12.81,12.53-12.81,3.22,0,6.51.84,9.17,2.38Zm-14.35,33.6c-1.68,1.47-2.38,3.22-2.38,5.46,0,4.2,2.73,6.51,8.12,6.51,5.04,0,8.75-2.03,8.75-6.23,0-3.71-2.8-5.39-8.4-5.39h-2.94c-1.19,0-2.24-.14-3.15-.35Zm12.95-28.98c-2.17-1.33-4.48-2.1-7.07-2.1-5.18,0-7.77,2.87-7.77,8.05,0,4.76,2.24,7.91,7.49,7.91,4.97,0,7.21-2.8,7.21-7.42v-4.41c0-.7.07-1.4.14-2.03Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m357.43,60.15c0-5.11-2.45-7.49-7.49-7.49-2.45,0-3.78.63-5.32,1.47-.21.07-1.05.56-1.82.56-1.33,0-1.89-1.26-1.96-2.31-.28-3.22,4.97-4.55,9.8-4.55,8.75,0,12.25,4.9,12.25,14.14v15.4c0,1.4.42,2.1,1.26,2.1.21,0,.28-.07.56-.07,1.33,0,2.03,1.19,2.03,2.38,0,1.75-1.61,2.38-3.15,2.38-2.31,0-4.2-1.33-5.25-3.5-2.66,2.45-5.81,3.71-9.59,3.71-7.21,0-10.71-4.27-10.71-10.57v-.28c0-6.86,4.06-10.36,12.32-10.36,2.52,0,4.9.35,7.07.98v-3.99Zm-14,13.44v.28c0,3.29,1.47,5.6,6.16,5.6,3.01,0,5.39-.98,7.84-3.08v-7.56c-2.31-.7-5.04-1.05-7.14-1.05-5.74,0-6.86,2.66-6.86,5.81Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m384.24,47.83c3.64,0,9.31.98,9.31,3.92,0,1.33-1.05,2.52-2.52,2.52-.49,0-.84-.14-1.26-.35-1.47-.7-2.8-1.26-5.32-1.26-4.27,0-6.23,1.68-6.23,4.9,0,2.17.91,3.29,3.29,4.48,4.83,2.38,13.02,3.01,13.02,12.11,0,6.3-3.99,10.22-11.76,10.22-3.57,0-10.29-.84-10.29-4.06,0-1.19.91-2.52,2.59-2.52.42,0,.49.07.7.14,1.96.77,4.2,1.61,7,1.61,3.85,0,6.44-1.54,6.44-5.18,0-2.52-1.19-3.57-2.59-4.34-4.41-2.38-13.72-2.87-13.72-12.11,0-6.02,3.92-10.08,11.34-10.08Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m407.13,61.9l12.67-13.16c.35-.42,1.05-.63,1.68-.63,1.47,0,2.59,1.12,2.59,2.52,0,.7-.21,1.33-.7,1.82l-10.29,10.5,11.83,17.5c.28.42.42,1.12.42,1.61-.07,1.4-1.19,2.31-2.59,2.31-.91,0-1.68-.42-2.24-1.33l-10.85-16.52-2.52,2.59v12.53c0,1.54-1.19,2.73-2.73,2.73s-2.73-1.19-2.73-2.73v-45.85c0-1.54,1.19-2.73,2.73-2.73s2.73,1.19,2.73,2.73v26.11Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m449.48,60.15c0-5.11-2.45-7.49-7.49-7.49-2.45,0-3.78.63-5.32,1.47-.21.07-1.05.56-1.82.56-1.33,0-1.89-1.26-1.96-2.31-.28-3.22,4.97-4.55,9.8-4.55,8.75,0,12.25,4.9,12.25,14.14v15.4c0,1.4.42,2.1,1.26,2.1.21,0,.28-.07.56-.07,1.33,0,2.03,1.19,2.03,2.38,0,1.75-1.61,2.38-3.15,2.38-2.31,0-4.2-1.33-5.25-3.5-2.66,2.45-5.81,3.71-9.59,3.71-7.21,0-10.71-4.27-10.71-10.57v-.28c0-6.86,4.06-10.36,12.32-10.36,2.52,0,4.9.35,7.07.98v-3.99Zm-14,13.44v.28c0,3.29,1.47,5.6,6.16,5.6,3.01,0,5.39-.98,7.84-3.08v-7.56c-2.31-.7-5.04-1.05-7.14-1.05-5.74,0-6.86,2.66-6.86,5.81Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m471.53,81.64c0,1.54-1.19,2.73-2.73,2.73s-2.73-1.19-2.73-2.73v-23.66c0-2.31-.28-3.64-1.12-4.9-.28-.42-.49-.77-.49-1.4,0-1.47,1.19-2.45,2.52-2.45,1.12,0,2.1.77,2.8,1.89,3.01-1.89,6.93-3.01,9.59-3.01,2.8,0,3.64,1.19,3.64,2.66,0,1.75-1.26,2.87-2.73,2.8-2.87-.07-5.39-.07-8.89,2.52.07.7.14,1.33.14,1.89v23.66Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m178.44,131.76l11.2,18.41c.21.42.35,1.05.35,1.61,0,1.47-1.89,2.66-3.01,2.66-.98,0-1.82-.49-2.31-1.33l-12.39-21h-8.05v19.46c0,1.54-1.33,2.94-2.87,2.94s-2.73-1.33-2.73-2.94v-43.75c0-1.82,1.47-3.36,3.22-3.36h12.18c11.55,0,15.26,7.07,15.26,14,0,7.42-4.2,11.97-10.85,13.3Zm-4.69-21.84h-9.52v16.8h9.94c6.16,0,9.52-2.87,9.52-8.26,0-4.13-1.82-8.54-9.94-8.54Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m215.61,147.58c.14-.07.49-.21.98-.21,1.4,0,2.45,1.19,2.45,2.45,0,3.43-7.56,4.55-11.34,4.55-7.91,0-12.46-5.04-12.46-11.62v-13.09c0-6.72,4.48-11.83,12.81-11.83,7.77,0,11.62,4.48,11.62,11.41,0,6.44-3.5,10.36-11.83,10.36-2.1,0-4.69-.21-7.14-.63v4.13c0,3.92,2.59,6.44,7.63,6.44,2.94,0,4.83-.84,7.28-1.96Zm-7.7-24.78c-4.55,0-7.21,2.45-7.21,6.37v5.32c2.59.35,5.95.49,7.35.49,5.32,0,6.23-2.87,6.23-5.74,0-4.55-2.31-6.44-6.37-6.44Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m230.1,110.41c-1.89,0-3.36-1.54-3.36-3.36s1.47-3.36,3.36-3.36,3.36,1.47,3.36,3.36-1.47,3.36-3.36,3.36Zm0,43.96c-1.54,0-2.73-1.19-2.73-2.73v-30.87c0-1.47,1.19-2.73,2.73-2.73s2.73,1.26,2.73,2.73v30.87c0,1.54-1.19,2.73-2.73,2.73Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m253.76,117.83c3.64,0,9.31.98,9.31,3.92,0,1.33-1.05,2.52-2.52,2.52-.49,0-.84-.14-1.26-.35-1.47-.7-2.8-1.26-5.32-1.26-4.27,0-6.23,1.68-6.23,4.9,0,2.17.91,3.29,3.29,4.48,4.83,2.38,13.02,3.01,13.02,12.11,0,6.3-3.99,10.22-11.76,10.22-3.57,0-10.29-.84-10.29-4.06,0-1.19.91-2.52,2.59-2.52.42,0,.49.07.7.14,1.96.77,4.2,1.61,7,1.61,3.85,0,6.44-1.54,6.44-5.18,0-2.52-1.19-3.57-2.59-4.34-4.41-2.38-13.72-2.87-13.72-12.11,0-6.02,3.92-10.08,11.34-10.08Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m290.65,147.58c.14-.07.49-.21.98-.21,1.4,0,2.45,1.19,2.45,2.45,0,3.43-7.56,4.55-11.34,4.55-7.91,0-12.46-5.04-12.46-11.62v-13.09c0-6.72,4.48-11.83,12.81-11.83,7.77,0,11.62,4.48,11.62,11.41,0,6.44-3.5,10.36-11.83,10.36-2.1,0-4.69-.21-7.14-.63v4.13c0,3.92,2.59,6.44,7.63,6.44,2.94,0,4.83-.84,7.28-1.96Zm-7.7-24.78c-4.55,0-7.21,2.45-7.21,6.37v5.32c2.59.35,5.95.49,7.35.49,5.32,0,6.23-2.87,6.23-5.74,0-4.55-2.31-6.44-6.37-6.44Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m308.43,151.64c0,1.54-1.19,2.73-2.73,2.73s-2.73-1.19-2.73-2.73v-23.66c0-2.31-.28-3.64-1.12-4.9-.28-.42-.49-.77-.49-1.4,0-1.47,1.19-2.45,2.52-2.45,1.12,0,2.1.77,2.8,1.89,3.01-1.89,6.93-3.01,9.59-3.01,2.8,0,3.64,1.19,3.64,2.66,0,1.75-1.26,2.87-2.73,2.8-2.87-.07-5.39-.07-8.89,2.52.07.7.14,1.33.14,1.89v23.66Z"
+                />
               </g>
             </svg>
           </a>
           <!-- Postens Pensjonistforbund -->
-          <a href="https://www.postpensjonistene.no/" class="flex items-center justify-center">
-            <img src="./img/postenspenjonistforbund.png" class="h-12" alt="Postens Pensjonistforbund">
+          <a
+            href="https://www.postpensjonistene.no/"
+            class="flex items-center justify-center"
+          >
+            <img
+              src="./img/postenspenjonistforbund.png"
+              class="h-12"
+              alt="Postens Pensjonistforbund"
+            />
           </a>
         </div>
       </div>
@@ -899,91 +1127,498 @@
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-8 mx-auto lg:py-16">
         <div class="mb-20 text-center">
-          <h2
-            class="mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white"
-          >
-            Andre tjenester
-          </h2>
-          <p class="text-center text-gray-500 sm:text-xl dark:text-gray-400">
-            I tillegg til nettsider tilbyr Asbjørn Ness Web følgende
-            tjenester.
+          <h2 class="regular-h2">Andre tjenester</h2>
+          <p class="text-center text-gray-500 sm:text-xl">
+            I tillegg til nettsider tilbyr Asbjørn Ness Web følgende tjenester.
           </p>
         </div>
         <div class="flex flex-wrap -mx-2 lg:w-4/5 sm:mx-auto sm:mb-2">
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="44 208 44 136 100 136" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="228" y1="208" x2="28" y2="208" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="100 208 100 88 156 88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><rect x="156" y="40" width="56" height="168" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <polyline
+                  points="44 208 44 136 100 136"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <line
+                  x1="228"
+                  y1="208"
+                  x2="28"
+                  y2="208"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="100 208 100 88 156 88"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <rect
+                  x="156"
+                  y="40"
+                  width="56"
+                  height="168"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></rect>
+              </svg>
               <span class="service-title">Webanalyse</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="24" y="56" width="208" height="40" rx="8" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><path d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="104" y1="136" x2="152" y2="136" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <rect
+                  x="24"
+                  y="56"
+                  width="208"
+                  height="40"
+                  rx="8"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></rect>
+                <path
+                  d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <line
+                  x1="104"
+                  y1="136"
+                  x2="152"
+                  y2="136"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
               <span class="service-title">Arkivering av nettsted</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="192" x2="128" y2="224" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="84" cy="140" r="12"></circle><circle cx="172" cy="140" r="12"></circle><line x1="128" y1="48" x2="128" y2="88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="144 176 128 192 112 176" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="96" y1="53" x2="96" y2="88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="160" y1="53" x2="160" y2="88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M32,136V51.3a8,8,0,0,1,13.7-5.6L67.6,67.6h0A100.8,100.8,0,0,1,128,48a100.8,100.8,0,0,1,60.4,19.6h0l21.9-21.9A8,8,0,0,1,224,51.3V136c0,48.6-43,88-96,88S32,184.6,32,136Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                class="fill-gray-700"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="128"
+                  y1="192"
+                  x2="128"
+                  y2="224"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <circle cx="84" cy="140" r="12"></circle>
+                <circle cx="172" cy="140" r="12"></circle>
+                <line
+                  x1="128"
+                  y1="48"
+                  x2="128"
+                  y2="88"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="144 176 128 192 112 176"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <line
+                  x1="96"
+                  y1="53"
+                  x2="96"
+                  y2="88"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="160"
+                  y1="53"
+                  x2="160"
+                  y2="88"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M32,136V51.3a8,8,0,0,1,13.7-5.6L67.6,67.6h0A100.8,100.8,0,0,1,128,48a100.8,100.8,0,0,1,60.4,19.6h0l21.9-21.9A8,8,0,0,1,224,51.3V136c0,48.6-43,88-96,88S32,184.6,32,136Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
               <span class="service-title">Drift</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.7,216H48a8,8,0,0,1-8-8V163.3a7.9,7.9,0,0,1,2.3-5.6l120-120a8,8,0,0,1,11.4,0l44.6,44.6a8,8,0,0,1,0,11.4l-120,120A7.9,7.9,0,0,1,92.7,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="136" y1="64" x2="192" y2="120" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="164" y1="92" x2="68" y2="188" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="95.5" y1="215.5" x2="40.5" y2="160.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M92.7,216H48a8,8,0,0,1-8-8V163.3a7.9,7.9,0,0,1,2.3-5.6l120-120a8,8,0,0,1,11.4,0l44.6,44.6a8,8,0,0,1,0,11.4l-120,120A7.9,7.9,0,0,1,92.7,216Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <line
+                  x1="136"
+                  y1="64"
+                  x2="192"
+                  y2="120"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="164"
+                  y1="92"
+                  x2="68"
+                  y2="188"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="95.5"
+                  y1="215.5"
+                  x2="40.5"
+                  y2="160.5"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
               <span class="service-title">Innholdsredigering</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="128" cy="128" r="40" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="99.7" y1="99.7" x2="60.1" y2="60.1" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="156.3" y1="99.7" x2="195.9" y2="60.1" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="156.3" y1="156.3" x2="195.9" y2="195.9" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="99.7" y1="156.3" x2="60.1" y2="195.9" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="96"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="40"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <line
+                  x1="99.7"
+                  y1="99.7"
+                  x2="60.1"
+                  y2="60.1"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="156.3"
+                  y1="99.7"
+                  x2="195.9"
+                  y2="60.1"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="156.3"
+                  y1="156.3"
+                  x2="195.9"
+                  y2="195.9"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="99.7"
+                  y1="156.3"
+                  x2="60.1"
+                  y2="195.9"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
               <span class="service-title">Supportavtaler</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="48" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><path d="M183.7,65.1q3.8,3.5,7.2,7.2l27.3,3.9a103.2,103.2,0,0,1,10.2,24.6l-16.6,22.1s.3,6.8,0,10.2l16.6,22.1a102.2,102.2,0,0,1-10.2,24.6l-27.3,3.9s-4.7,4.9-7.2,7.2l-3.9,27.3a103.2,103.2,0,0,1-24.6,10.2l-22.1-16.6a57.9,57.9,0,0,1-10.2,0l-22.1,16.6a102.2,102.2,0,0,1-24.6-10.2l-3.9-27.3q-3.7-3.5-7.2-7.2l-27.3-3.9a103.2,103.2,0,0,1-10.2-24.6l16.6-22.1s-.3-6.8,0-10.2L27.6,100.8A102.2,102.2,0,0,1,37.8,76.2l27.3-3.9q3.5-3.7,7.2-7.2l3.9-27.3a103.2,103.2,0,0,1,24.6-10.2l22.1,16.6a57.9,57.9,0,0,1,10.2,0l22.1-16.6a102.2,102.2,0,0,1,24.6,10.2Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="48"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <path
+                  d="M183.7,65.1q3.8,3.5,7.2,7.2l27.3,3.9a103.2,103.2,0,0,1,10.2,24.6l-16.6,22.1s.3,6.8,0,10.2l16.6,22.1a102.2,102.2,0,0,1-10.2,24.6l-27.3,3.9s-4.7,4.9-7.2,7.2l-3.9,27.3a103.2,103.2,0,0,1-24.6,10.2l-22.1-16.6a57.9,57.9,0,0,1-10.2,0l-22.1,16.6a102.2,102.2,0,0,1-24.6-10.2l-3.9-27.3q-3.7-3.5-7.2-7.2l-27.3-3.9a103.2,103.2,0,0,1-10.2-24.6l16.6-22.1s-.3-6.8,0-10.2L27.6,100.8A102.2,102.2,0,0,1,37.8,76.2l27.3-3.9q3.5-3.7,7.2-7.2l3.9-27.3a103.2,103.2,0,0,1,24.6-10.2l22.1,16.6a57.9,57.9,0,0,1,10.2,0l22.1-16.6a102.2,102.2,0,0,1,24.6,10.2Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
               <span class="service-title">Teknisk rådgiving</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="64 88 16 128 64 168" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="192 88 240 128 192 168" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="160" y1="40" x2="96" y2="216" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-              <span class="service-title">Videreutvikling og programmering</span>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                class="fill-gray-700"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <polyline
+                  points="64 88 16 128 64 168"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <polyline
+                  points="192 88 240 128 192 168"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <line
+                  x1="160"
+                  y1="40"
+                  x2="96"
+                  y2="216"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
+              <span class="service-title"
+                >Videreutvikling og programmering</span
+              >
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="118.1 174.1 152 208 185.9 174.1" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="152" y1="128" x2="152" y2="208" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M96,208H72A56,56,0,0,1,72,96a57.5,57.5,0,0,1,13.9,1.7" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M80,128a80,80,0,1,1,144,48" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <polyline
+                  points="118.1 174.1 152 208 185.9 174.1"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <line
+                  x1="152"
+                  y1="128"
+                  x2="152"
+                  y2="208"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M96,208H72A56,56,0,0,1,72,96a57.5,57.5,0,0,1,13.9,1.7"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M80,128a80,80,0,1,1,144,48"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
               <span class="service-title">Oppdatering av systemer</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="32 128 72 128 88 104 120 152 136 128 160 128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><path d="M28.1,96c-.1-1.3-.1-2.7-.1-4A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92c0,68-100,124-100,124s-39.9-22.4-69.3-56" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <polyline
+                  points="32 128 72 128 88 104 120 152 136 128 160 128"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <path
+                  d="M28.1,96c-.1-1.3-.1-2.7-.1-4A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92c0,68-100,124-100,124s-39.9-22.4-69.3-56"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
               <span class="service-title">Helsesjekk av nettsted</span>
             </div>
           </article>
-          <article class="w-full p-2 sm:w-1/2">
-            <div class="flex items-center h-full p-4 bg-gray-100 rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 text-hoved" fill="none" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M77.4,201.9l-32.3,27A8,8,0,0,1,32,222.8V64a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V192a8,8,0,0,1-8,8H82.5A7.8,7.8,0,0,0,77.4,201.9Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <article class="service-article">
+            <div class="service-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0 w-6 h-6 mr-4 text-hoved stroke-gray-700"
+                fill="none"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M77.4,201.9l-32.3,27A8,8,0,0,1,32,222.8V64a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V192a8,8,0,0,1-8,8H82.5A7.8,7.8,0,0,0,77.4,201.9Z"
+                  fill="none"
+                  class="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
               <span class="service-title">Med mer, ta kontakt</span>
             </div>
           </article>
         </div>
-        <div clasS="flex items-center mt-16">
-        <a
-          href="mailto:asbjorn@snobjorn.no"
-          class="px-8 py-2 mx-auto text-lg text-white duration-300 ease-in border-0 rounded bg-middels focus:outline-none hover:bg-hoved"
-        >
-          Send e-post
-        </a>
+        <div class="flex items-center mt-16">
+          <a
+            href="mailto:asbjorn@snobjorn.no"
+            class="px-8 py-2 mx-auto text-lg text-white no-underline duration-300 ease-in border-0 rounded bg-middels focus:outline-none hover:bg-hoved hover:text-white"
+          >
+            Send e-post
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Introduction -->
-    <section class="mb-4 ">
+    <section class="mb-4">
       <!-- Profile card -->
       <div
         class="flex flex-col items-start justify-between gap-4 py-12 mx-4 md:flex-row"
@@ -991,27 +1626,25 @@
         <div class="container mx-auto lg:w-3/5">
           <div>
             <div class="p-4 px-16 bg-white shadow-lg rounded-2xl">
-              <div class="flex flex-row items-center justify-center gap-4 mt-8">
-                <div class="flex-shrink-0">
-                  <img
-                    alt="profil"
-                    src="./img/asbjorn.jpeg"
-                    class="object-cover w-16 h-16 mx-auto rounded-full"
-                  />
-                </div>
-                <div class="flex flex-col">
-                  <h2
-                    class="text-lg font-medium text-gray-600 dark:text-white"
-                  >
-                    Asbjørn Ness
-                  </h2>
-                  <span class="text-xs text-gray-400">webutvikler</span>
-                </div>
-              </div>
+              <h2 class="mt-8 regular-h2">Asbjørn Ness</h2>
               <div class="mt-8 mb-8">
-                <p class="mx-auto mb-4 text-base">Jeg har laget websider i over 20 år, og har jobbet som webredaktør for større nettsider i over 10 år.</p>
-                <p class="mx-auto mb-4 text-base">Som webredaktør har god brukerinnsikt. Om hvordan besøkere navigere, men også hvordan ansatte jobber i et system. Et nettstad skal være enkelt og forståelig for de som drifter siden, samtidig som siden oppfyller forventningene til en besøker.</p>
-                <p class="mx-auto text-base">I en jungel av kostbare og kompliserte løsninger er jeg opptatt av at du ikke skal måtte bruke mer penger enn nødvendig, og at systemet ikke skal være for komplisert med flere løsninger enn du har bruk for.</p>
+                <p class="mx-auto mb-4 text-base">
+                  Jeg har laget websider i over 20 år, og har jobbet som
+                  webredaktør for større nettsider i over 10 år.
+                </p>
+                <p class="mx-auto mb-4 text-base">
+                  Som webredaktør har god brukerinnsikt. Om hvordan besøkere
+                  navigere, men også hvordan ansatte jobber i et system. Et
+                  nettstad skal være enkelt og forståelig for de som drifter
+                  siden, samtidig som siden oppfyller forventningene til en
+                  besøker.
+                </p>
+                <p class="mx-auto text-base">
+                  I en jungel av kostbare og kompliserte løsninger er jeg
+                  opptatt av at du ikke skal måtte bruke mer penger enn
+                  nødvendig, og at systemet ikke skal være for komplisert med
+                  flere løsninger enn du har bruk for.
+                </p>
               </div>
             </div>
           </div>
@@ -1019,33 +1652,29 @@
       </div>
     </section>
 
-    <footer class="pt-4 pb-8 bg-white dark:bg-gray-800 xl:pt-8">
+    <footer class="pt-4 pb-8 bg-white xl:pt-8">
       <div
-        class="max-w-screen-lg px-4 pt-10 mx-auto text-gray-400 pt-14 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-300"
+        class="max-w-screen-lg px-4 pt-10 mx-auto text-gray-400 pt-14 xl:max-w-screen-xl sm:px-6 md:px-8"
       >
         <ul class="flex flex-wrap justify-center pb-8 text-lg font-light">
-          
           <!-- Business information -->
           <li class="w-1/2 md:w-1/3 lg:w-1/3">
             <div class="text-center">
-              
               <ul>
-                
                 <li
-                  class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                  class="mb-4 transition-colors duration-200 hover:text-gray-800"
                 >
-                  <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=916629117">916 629 117 (brreg.no)</a>
+                  <a
+                    href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=916629117"
+                    >916 629 117 (brreg.no)</a
+                  >
                 </li>
                 <li
-                  class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                  class="mb-4 transition-colors duration-200 hover:text-gray-800"
                 >
                   <a href="mailto:asbjorn@snobjorn.no">asbjorn@snobjorn.no</a>
                 </li>
-                <li
-                  class="mb-4"
-                >
-                  Ing. Hoels vei 60, 1346 Gjettum
-                </li>
+                <li class="mb-4">Ing. Hoels vei 60, 1346 Gjettum</li>
               </ul>
             </div>
           </li>
@@ -1053,37 +1682,127 @@
           <!-- Practical information -->
           <li class="w-1/2 md:w-1/3 lg:w-1/3">
             <div class="text-center">
-             
               <ul>
-                <li
-                  class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                >
-                <span data-tooltip-target="tooltip-pris">Timepris</span>
-                <div id="tooltip-pris" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                  Hos Asbjørn Ness Web betaler du timepris. Nåværende pris for nye kunder er <strong>kr 780 eks. mva.</strong> per time.
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-                </li>
-                <li
-                  class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                >
-                <span data-tooltip-target="tooltip-faktura">Fakturering</span>
-                <div id="tooltip-faktura" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                  Fakturaer sendes fra Fiken. Du kan motta faktura som EHF eller på e-post. Asbjørn Ness Web fakturer månedlig.
-                  <div class="tooltip-arrow" data-popper-arrow></div>
-                </div>
-                </li>
-                <li
-                  class="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
-                >
-                  <span data-tooltip-target="tooltip-personvern">Personvern</span>
-                  <div id="tooltip-personvern" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                    Ingen informasjonskapsler. Innsendte opplysninger i skjema blir lagret hos Netlify.
+                <li class="practical-item" data-tooltip-target="tooltip-pris">
+                  <span>Timepris</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="inline w-4 h-4 fill-hoved hover:fill-middels text-hoved hover:text-middels stroke-hoved hover:stroke-middels"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      class="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></circle>
+                    <circle cx="128" cy="180" r="12"></circle>
+                    <path
+                      d="M128,144v-8a28,28,0,1,0-28-28"
+                      fill="none"
+                      class="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></path>
+                  </svg>
+                  <div
+                    id="tooltip-pris"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip"
+                  >
+                    Hos Asbjørn Ness Web betaler du timepris. Nåværende pris for
+                    nye kunder er <strong>kr 780 eks. mva.</strong> per time.
                     <div class="tooltip-arrow" data-popper-arrow></div>
                   </div>
                 </li>
-               
-                
+                <li
+                  class="practical-item"
+                  data-tooltip-target="tooltip-faktura"
+                >
+                  <span>Fakturering</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="inline w-4 h-4 fill-hoved hover:fill-middels text-hoved hover:text-middels stroke-hoved hover:stroke-middels"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      class="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></circle>
+                    <circle cx="128" cy="180" r="12"></circle>
+                    <path
+                      d="M128,144v-8a28,28,0,1,0-28-28"
+                      fill="none"
+                      class="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></path>
+                  </svg>
+                  <div
+                    id="tooltip-faktura"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip"
+                  >
+                    Fakturaer sendes fra Fiken. Du kan motta faktura som EHF
+                    eller på e-post. Asbjørn Ness Web fakturer månedlig.
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </li>
+                <li
+                  class="practical-item"
+                  data-tooltip-target="tooltip-personvern"
+                >
+                  <span>Personvern</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="inline w-4 h-4 fill-hoved hover:fill-middels text-hoved hover:text-middels stroke-hoved hover:stroke-middels"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      class="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></circle>
+                    <circle cx="128" cy="180" r="12"></circle>
+                    <path
+                      d="M128,144v-8a28,28,0,1,0-28-28"
+                      fill="none"
+                      class="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></path>
+                  </svg>
+                  <div
+                    id="tooltip-personvern"
+                    role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip"
+                  >
+                    Ingen informasjonskapsler. Innsendte opplysninger i skjema
+                    blir lagret hos FormKeep.
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </li>
               </ul>
             </div>
           </li>
@@ -1096,60 +1815,200 @@
           <a href="https://www.facebook.com/asbjornnessweb/">
             <svg
               class="footer-icon"
-              viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="footer-icon-facebook"
             >
+              <title id="footer-icon-facebook">
+                Asbjørn Ness Web på Facebook
+              </title>
+              <rect width="256" height="256" fill="none"></rect>
+              <circle
+                cx="128"
+                cy="128"
+                r="96"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></circle>
               <path
-                d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"
+                d="M168,88H152a23.9,23.9,0,0,0-24,24V224"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
               ></path>
-              <title>Asbjørn Ness Web på Facebook</title>
+              <line
+                x1="96"
+                y1="144"
+                x2="160"
+                y2="144"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
             </svg>
           </a>
-          
+
           <!-- GitHub -->
           <a href="https://github.com/snobjorn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="footer-icon"
-              viewBox="0 0 1792 1792"
+              viewBox="0 0 256 256"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="footer-icon-github"
             >
+              <title id="footer-icon-github">Asbjørn Ness Web på GitHub</title>
+              <rect width="256" height="256" fill="none"></rect>
               <path
-                d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"
+                d="M84,240a23.9,23.9,0,0,0,24-24V168"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
               ></path>
-              <title>Asbjørn Ness Web på GitHub</title>
+              <path
+                d="M172,240a23.9,23.9,0,0,1-24-24V168"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+              <path
+                d="M152,168h16a23.9,23.9,0,0,1,24,24v8a23.9,23.9,0,0,0,24,24"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+              <path
+                d="M104,168H88a23.9,23.9,0,0,0-24,24v8a23.9,23.9,0,0,1-24,24"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+              <path
+                d="M111.8,64A52,52,0,0,0,68,40a52,52,0,0,0-3.5,44.7A49.3,49.3,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.3,49.3,0,0,0-8.5-27.3A52,52,0,0,0,188,40a52,52,0,0,0-43.8,24Z"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
             </svg>
           </a>
 
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/company/23327494/">
             <svg
-              class="footer-icon"
-              viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
+              class="footer-icon"
+              viewBox="0 0 256 256"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="footer-icon-linkedin"
             >
+              <title id="footer-icon-linkedin">
+                Asbjørn Ness Web på LinkedIn
+              </title>
+              <rect width="256" height="256" fill="none"></rect>
+              <rect
+                x="36"
+                y="36"
+                width="184"
+                height="184"
+                rx="8"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></rect>
+              <line
+                x1="120"
+                y1="112"
+                x2="120"
+                y2="176"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <line
+                x1="88"
+                y1="112"
+                x2="88"
+                y2="176"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
               <path
-                d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"
+                d="M120,140a28,28,0,0,1,56,0v36"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
               ></path>
-              <title>Asbjørn Ness Web på LinkedIn</title>
+              <circle cx="88" cy="80" r="12"></circle>
             </svg>
-          </a>
-
-          <!-- ProcessWire -->
-          <a href="https://directory.processwire.com/developers/asbjorn-ness/">
-            <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" class="footer-icon">
-            <title>Asbjørn Ness Web på ProcessWire Developers</title>
-            <path d="M21.939 5.27C21.211 4.183 20 2.941 18.784 2.137 16.258.407 13.332-.207 10.744.061c-2.699.291-5.01 1.308-6.91 3.004C2.074 4.637.912 6.559.4 8.392c-.518 1.833-.449 3.53-.264 4.808.195 1.297.841 2.929.841 2.929.132.313.315.44.41.493.472.258 1.247.031 1.842-.637.03-.041.046-.098.03-.146-.166-.639-.226-1.12-.285-1.492-.135-.736-.195-1.969-.105-3.109.045-.617.165-1.277.375-1.969.406-1.367 1.262-2.794 2.6-3.98 1.441-1.277 3.289-2.066 5.046-2.27.616-.074 1.788-.145 3.199.203.301.075 1.593.412 2.975 1.348 1.006.684 1.816 1.528 2.374 2.363.568.797 1.185 2.141 1.366 3.125.256 1.12.256 2.307.074 3.463-.225 1.158-.631 2.284-1.262 3.275-.435.768-1.337 1.783-2.403 2.545-.961.676-2.058 1.164-3.184 1.434-.57.135-1.142.221-1.728.24-.521.016-1.212 0-1.697-.082-.721-.115-.871-.299-1.036-.549 0 0-.115-.18-.147-.662.011-4.405.009-3.229.009-5.516 0-.646-.021-1.232-.015-1.764.03-.873.104-1.473.728-2.123.451-.479 1.082-.768 1.777-.768.211 0 .938.01 1.577.541.685.572.8 1.354.827 1.563.156 1.223-.652 2.134-.962 2.365-.384.288-.729.428-.962.51-.496.166-1.041.214-1.531.182-.075-.005-.143.044-.158.119l-.165.856c-.161.65.2.888.41.972.671.207 1.266.293 1.971.24 1.081-.076 2.147-.502 3.052-1.346.77-.732 1.209-1.635 1.359-2.645.15-1.121-.045-2.328-.556-3.35-.562-1.127-1.532-2.068-2.81-2.583-1.291-.508-2.318-.526-3.642-.188l-.015.005c-.86.296-1.596.661-2.362 1.452-.525.546-.955 1.207-1.217 1.953-.26.752-.33 1.313-.342 2.185-.016.646.015 1.246.015 1.808v3.701c0 1.184-.04 1.389 0 1.998.022.404.078.861.255 1.352.182.541.564 1.096.826 1.352.367.391.834.705 1.293.9 1.051.467 2.478.541 3.635.496.766-.029 1.536-.135 2.291-.314 1.51-.359 2.96-1.012 4.235-1.918 1.367-.963 2.555-2.277 3.211-3.393.841-1.326 1.385-2.814 1.668-4.343.255-1.532.243-3.103-.099-4.612-.27-1.4-.991-2.936-1.823-4.176l.038.037z"/>
-          </svg>
           </a>
 
           <!-- Instagram -->
           <a href="https://www.instagram.com/snobjorn.no/">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="footer-icon">
-              <title>Asbjørn Ness Web på Instagram</title>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              class="footer-icon"
+              role="img"
+              aria-hidden="false"
+              aria-labelledby="footer-icon-instagram"
+            >
+              <title id="footer-icon-instagram">
+                Asbjørn Ness Web på Instagram
+              </title>
               <rect width="256" height="256" fill="none"></rect>
-              <circle cx="128" cy="128" r="40" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="16"></circle>
-              <rect x="36" y="36" width="184" height="184" rx="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
-              <circle cx="180" cy="76" r="12"></circle
+              <circle
+                cx="128"
+                cy="128"
+                r="40"
+                fill="none"
+                class="currentColor"
+                stroke-miterlimit="10"
+                stroke-width="16"
+              ></circle>
+              <rect
+                x="36"
+                y="36"
+                width="184"
+                height="184"
+                rx="48"
+                fill="none"
+                class="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                shape-renderer="crispEdges"
+              ></rect>
+              <circle cx="180" cy="76" r="12"></circle>
             </svg>
           </a>
         </div>
