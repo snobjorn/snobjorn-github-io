@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-200 dark:bg-gray-900;
+  }
+
+  h1 {
+    @apply mt-16 text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-white;
+  }
+
+  .feature-item {
+    @apply flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-middels lg:h-12 lg:w-12;
+  }
+  .feature-icon {
+    @apply w-5 h-5 text-slate-50 lg:w-6 lg:h-6 fill-slate-50;
+  }
+  .feature-title {
+    @apply mb-2 text-xl font-bold dark:text-white;
+  }
+  .feature-text {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  .service-title {
+    @apply font-medium;
+  }
+
+  .footer-icon {
+    @apply w-6 h-6 text-xl transition-colors duration-200 fill-current hover:text-gray-800;
+  }
+}

@@ -1,0 +1,4 @@
+Contact: mailto:asbjorn@snobjorn.no
+Expires: 2023-10-01T08:00:00.000Z
+Preferred-Languages: no, en
+Canonical: https://www.snobjorn.no/.well-known/security.txt
