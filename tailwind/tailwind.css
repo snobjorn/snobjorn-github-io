@@ -36,7 +36,7 @@
     @apply flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-middels lg:h-12 lg:w-12;
   }
   .feature-icon {
-    @apply w-5 h-5 text-slate-50 lg:w-6 lg:h-6 fill-slate-50 stroke-white fill-white;
+    @apply w-5 h-5 text-slate-50 lg:w-6 lg:h-6;
   }
   .feature-title {
     @apply mb-2 text-xl font-bold;
@@ -60,6 +60,6 @@
   }
 
   .footer-icon {
-    @apply w-6 h-6 text-xl transition-colors duration-200 fill-current hover:text-gray-800 stroke-gray-500;
+    @apply w-6 h-6;
   }
 }
