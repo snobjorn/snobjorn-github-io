@@ -29,7 +29,7 @@
     @apply py-4 text-2xl font-semibold text-gray-700 sm:text-xl;
   }
   .steps-text {
-    @apply py-4 text-base text-gray-500;
+    @apply py-4 text-base text-gray-700;
   }
 
   .feature-item {
@@ -39,10 +39,10 @@
     @apply w-5 h-5 text-slate-50 lg:w-6 lg:h-6;
   }
   .feature-title {
-    @apply mb-2 text-xl font-bold;
+    @apply mb-2 text-xl font-bold text-gray-900;
   }
   .feature-text {
-    @apply text-gray-500;
+    @apply text-gray-700;
   }
 
   .service-article {
@@ -52,11 +52,11 @@
     @apply flex items-center h-full p-4 bg-gray-100 rounded;
   }
   .service-title {
-    @apply font-medium;
+    @apply font-medium text-gray-700;
   }
 
   .practical-item {
-    @apply flex items-center justify-center gap-2 mb-4 transition-colors duration-200 hover:text-gray-800 hover:cursor-help text-hoved hover:text-middels;
+    @apply flex items-center justify-center gap-2 mb-4 transition-colors duration-200 hover:cursor-help text-hoved hover:text-middels;
   }
 
   .footer-icon {

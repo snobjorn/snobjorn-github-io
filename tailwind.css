@@ -927,7 +927,7 @@ a:hover {
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .feature-item {
@@ -968,11 +968,13 @@ a:hover {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .feature-text {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .service-article {
@@ -998,6 +1000,8 @@ a:hover {
 
 .service-title {
   font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .practical-item {
@@ -1015,7 +1019,6 @@ a:hover {
 
 .practical-item:hover {
   cursor: help;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
   --tw-text-opacity: 1;
   color: rgb(8 124 167 / var(--tw-text-opacity));
 }
@@ -1276,6 +1279,10 @@ a:hover {
   margin-top: 2rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1370,6 +1377,18 @@ a:hover {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-2 {
@@ -1672,6 +1691,10 @@ a:hover {
   padding-top: 2rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1802,14 +1825,6 @@ a:hover {
 
 .transition-opacity {
   transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition {
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
