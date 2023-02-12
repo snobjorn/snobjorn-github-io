@@ -16,7 +16,7 @@
   }
 
   .regular-h2 {
-    @apply mb-4 text-4xl font-extrabold tracking-tight text-center text-gray-900;
+    @apply mb-4 text-3xl font-extrabold tracking-tight text-center text-gray-900;
   }
 
   .steps-item {

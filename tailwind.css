@@ -843,8 +843,8 @@ a:hover {
 .regular-h2 {
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.025em;
   --tw-text-opacity: 1;
