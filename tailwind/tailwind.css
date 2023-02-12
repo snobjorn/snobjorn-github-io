@@ -59,6 +59,10 @@
     @apply flex items-center justify-center gap-2 mb-4 transition-colors duration-200 hover:cursor-help text-hoved hover:text-middels;
   }
 
+  .footer-social-link {
+    @apply p-1 rounded-sm hover:bg-gray-100;
+  }
+
   .footer-icon {
     @apply w-6 h-6;
   }
