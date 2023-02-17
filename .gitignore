@@ -1,0 +1,7 @@
+.DS_Store?
+.DS_Store
+.DS_STORE
+config.rb
+.sass-cache/
+.sass-cache/*
+**/tailwind/node_modules/**
